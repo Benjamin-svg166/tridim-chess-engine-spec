@@ -70,6 +70,6 @@ This spec was drafted by Benjamin Nathaniel Bussie as part of a clean-room initi
 
 ```
 
----
+---👉 [Visit the engine codebase](https://github.com/Benjamin-svg166/tridim-chess)
 
 Let me know when you’ve pasted it into your GitHub repo — I can help you write a project description, add tags, or even draft a developer manifesto next. Ready to build the future of layered chess
