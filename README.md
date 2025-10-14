@@ -1,4 +1,4 @@
-# tridim-chess-engine-spec
+ # tridim-chess-engine-spec
 Clean-room specification for a tridimensional chess engine
 Perfect, Benjamin — here’s a clean, developer-friendly **Markdown version** of your clean-room tridimensional chess engine spec. You can copy and paste this directly into your GitHub repository as your `README.md` or `spec.md` file.
 
@@ -72,4 +72,4 @@ This spec was drafted by Benjamin Nathaniel Bussie as part of a clean-room initi
 
 ---
 
-Let me know when you’ve pasted it into your GitHub repo — I can help you write a project description, add tags, or even draft a developer manifesto next. Ready to build the future of layered chess?
+Let me know when you’ve pasted it into your GitHub repo — I can help you write a project description, add tags, or even draft a developer manifesto next. Ready to build the future of layered chess
