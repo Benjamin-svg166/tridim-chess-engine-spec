@@ -10,19 +10,22 @@ class PieceLogicEngine:
     def __init__(self, board_manager):
         self.board = board_manager
 
-    def get_valid_moves(self, piece, layer, row, col):
-        """
-        Returns a list of valid moves for a given piece at a position.
-        Each move is a tuple: (target_layer, target_row, target_col)
-        """
-        if piece is None:
-            return []
+    def get_valid_moves(self, piece_obj):
+    """
+    Returns a list of valid moves for a given Piece object.
+    Each move is a tuple: (target_layer, target_row, target_col)
+    """
+    if piece_obj is None or not hasattr(piece_obj, "piece_type"):
+        return []
 
-        method_name = f"_moves_for_{piece.lower()}"
-        if hasattr(self, method_name):
-            return getattr(self, method_name)(layer, row, col)
-        else:
-            return []
+    piece_type = piece_obj.piece_type.lower()
+    layer, row, col = piece_obj.get_position()
+
+    method_name = f"_moves_for_{piece_type}"
+    if hasattr(self, method_name):
+        return getattr(self, method_name)(layer, row, col)
+    else:
+        return []
 
     def _moves_for_knight(self, layer, row, col):
         """
