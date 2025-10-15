@@ -73,3 +73,14 @@ def test_knight_moves():
             if self.board.is_valid_position(layer + dl, row + forward, col):
                 moves.append((layer + dl, row + forward, col))
         return moves
+def test_rook_moves():
+    board = BoardManager()
+    logic = PieceLogicEngine(board)
+    moves = logic.get_valid_moves("rook", 1, 4, 4)
+    assert any(move[0] != 1 for move in moves), "Rook should move vertically"
+
+def test_bishop_moves():
+    board = BoardManager()
+    logic = PieceLogicEngine(board)
+    moves = logic.get_valid_moves("bishop", 1, 4, 4)
+    assert any(move[0] != 1 for move in moves), "Bishop should move diagonally across layers"
